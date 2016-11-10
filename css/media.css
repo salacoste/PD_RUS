@@ -1,0 +1,17 @@
+@media(min-width:1200px)
+{
+    .row
+    {
+        margin-left:-15px;margin-right:-15px
+    }
+    .b-page_main .row
+    {
+        margin-left:-7px;
+        margin-right:-8px
+    }
+    nav .container-fluid {
+        max-width: 1320px;
+    }
+}
+
+
