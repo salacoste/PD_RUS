@@ -4,7 +4,7 @@ header .navbar {
 html {height: 100%}
 
 body {
-    font: .8125em/1.5384 arial,sans-serif;
+    font: 13px arial,sans-serif;
     background: #fafafa;
     color: #000;
     heigth: 100%;
@@ -12,6 +12,10 @@ body {
 
 .m-theme_background {
     background: #fff url(../img/plastidip-russia-background.jpg) top center repeat-y;
+    z-index: 0;
+}
+.nounderline {
+    text-decoration: none!important;
 }
 
 body.bg-white {background: #fff}
@@ -322,5 +326,118 @@ a.active .b-ico_sign-in.b-ico_sm, a.active:hover .b-ico_sign-in.b-ico_sm, .b-ico
     margin-right: -13px;
 }
 
-
 /** **/
+
+.m-theme_background .b-page__header, .m-theme_background .b-page__body, .m-theme_background .navbar-static-top:not(.navbar_color_default) {
+    background: transparent;
+    border-bottom: 0;
+}
+.m-theme_background .b-page__header {
+    z-index: auto;
+}
+.b-page_theme_normal .b-page__wrapper:after {
+    content: '';
+    position: absolute;
+    display: block;
+    /* min-width: 980px; */
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: -1;
+}
+
+
+/** Начало второго блока nav в шапке header **/
+
+.navbar_headermain-responsive {
+    height: 74px;
+}
+.navbar_headermain-responsive .container-fluid .row .logo {
+    max-width: 255px;
+}
+
+.b-head-logo {
+    min-height: 34px;
+    line-height: 31px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.b-head-logo a {
+    display: block;
+    text-decoration: none;
+    min-height: 34px;
+    margin-bottom: -34px;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    background: url(../img/main_page/transparent.png) 0 0 repeat;
+    -ms-filter: "alpha(opacity=0)";
+}
+.navbar_headermain-responsive .container-fluid {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.logo_img {
+    max-width: 215px;
+    width: 100%;
+    max-height: 34px;
+}
+
+.navbar-text {
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.navbar_headermain-responsive .navbar-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.navbar_headermain-responsive .navbar-text:first-child {
+    margin-left: 0;
+}
+.b-page_theme_normal a {
+    color: #137fb7;
+    text-decoration: none;
+}
+.b-page_theme_normal a:hover, .b-page_theme_normal a.hover, .b-page_theme_normal a.pseudo-hover, .b-page_theme_normal a:focus, .b-page_theme_normal a:active {
+    text-decoration: none;
+    color: #e4003a;
+}
+.b-pseudolink {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    cursor: pointer;
+}
+.b-pseudolink.nounderline {
+    border-bottom: 0;
+}
+.b-page_theme_normal .b-pseudolink, .b-page_theme_normal .b-box_pseudolink .b-box__handler {
+    color: #137fb7;
+}
+.b-page_theme_normal a.underline, .b-page_theme_normal a.nounderline>.underline, .b-page_theme_normal .b-pseudolink, .b-page_theme_normal .b-pseudolink.nounderline>.underline, .b-page_theme_normal .b-box_pseudolink .b-box__handler {
+    border-bottom-color: rgba(19,127,183,0.3);
+}
+.b-page_theme_normal .b-pseudolink:hover, .b-page_theme_normal .b-pseudolink.hover, .b-page_theme_normal .b-pseudolink.pseudo-hover, .b-page_theme_normal .b-box_pseudolink:hover .b-box__handler, .b-page_theme_normal .b-box_pseudolink.hover .b-box__handler, .b-page_theme_normal .b-box_pseudolink.pseudo-hover .b-box__handler {
+    color: #e4003a;
+}
+.b-page_theme_normal a.underline:hover, .b-page_theme_normal a.underline.hover, .b-page_theme_normal a.underline.pseudo-hover, .b-page_theme_normal a.nounderline:hover>.underline, .b-page_theme_normal a.nounderline.hover>.underline, .b-page_theme_normal a.nounderline.pseudo-hover>.underline, .b-page_theme_normal .b-pseudolink:hover, .b-page_theme_normal .b-pseudolink.hover, .b-page_theme_normal .b-pseudolink.pseudo-hover, .b-page_theme_normal .b-pseudolink.nounderline:hover>.underline, .b-page_theme_normal .b-pseudolink.nounderline.hover>.underline, .b-page_theme_normal .b-pseudolink.nounderline.pseudo-hover>.underline, .b-page_theme_normal .b-box_pseudolink:hover .b-box__handler, .b-page_theme_normal .b-box_pseudolink.hover .b-box__handler, .b-page_theme_normal .b-box_pseudolink.pseudo-hover .b-box__handler {
+    border-bottom-color: rgba(228,0,58,0.3);
+}
+
+.navbar_headermain-responsive .navbar-phone .code {
+    font-size: 13px;
+}
+.navbar_headermain-responsive .navbar-phone .number {
+    font-size: 18px;
+    font-weight: bold;
+}
+.b-page_theme_normal .text-muted {
+    color: #808080;
+}

@@ -20,6 +20,9 @@
 </head>
 <body class="b-page_theme_normal">
 <div class="b-page b-page_main b-page_theme_normal m-theme_background">
+    <div class="b-page__wrapper">
+
+    <a name="up" class="b-anchor g-abs"></a>
     <!-- Хеадер -->
     <header role="banner" class="b-page__header">
         <nav class="navbar_theme_normal navbar navbar-default navbar_size_sm navbar-static-top navbar_color_default hidden-xs" role="navigation">
@@ -44,6 +47,10 @@
                    </ul>
                    <ul class="nav navbar-nav navbar-right">
                        <li>
+                           <a href="/help/current" class="">Помощь</a>
+                       </li>
+                       <li><a href="/registration?target=/">Регистрация</a></li>
+                       <li>
                            <a href="/login?target=/">
                                 <i class="b-ico b-ico_sm b-ico_sign-in active"></i>
                                 <span>Вход</span>
@@ -53,8 +60,33 @@
                </div>
             </div>
         </nav>
-        <nav class="navbar-static-top navbar-theme-normal ">
+        <nav class="navbar-static-top navbar_color_white navbar_theme_normal navbar_headermain-responsive">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 logo">
+                        <div itemscope="" itemtype="http://schema.org/Organization" class="b-head-logo navbar-logo">
 
+                            <a itemprop="url" href="[[++site_url]]/">Пластидип</a>
+                            <img src="./img/main_page/logo-02.png" class="logo_img" alt="Пластидип Россия. PLASTI DIP - жидкая резина для авто" itemprop="logo" >
+                            <span style="display:none;" itemprop="name">ООО «Пластидип Россия»</span>
+                            <span style="display:none;" itemprop="description">Продажа жидкой резины PLASTI DIP в России для покраски автомобилей, дисков и решеток.</span>
+                            <span style="display:none;" itemprop="address">147026, г. Москва, ул. Большая Тульская, д. 19</span>
+                            <span style="display:none;" itemprop="telephone">+79054775389</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <p class="navbar-text">
+                                    <span class="b-pseudolink navbar-link nounderline" id="load-cities" data-target="#cities-modal" data-href="/header/cities.json">
+                                    Москва
+                                    </span>
+                        </p>
+                        <p class="navbar-text navbar-phone">
+                            <small class="number">+7 905</small>&nbsp;<span class="number">477-53-89</span></br>
+                            <small class="text-muted">09:00-21:00</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Контент блок -->
@@ -62,6 +94,7 @@
 
     </div>
 
+    </div>
 </div>
 
 
